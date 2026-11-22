@@ -1,0 +1,408 @@
+
+/* =====================================
+   KPOP WORLD - FAN GROUPS PAGE
+===================================== */
+
+.fan-groups-page {
+  min-height: 100vh;
+  padding: 65px 8%;
+  background: #f7f3fc;
+  color: #354c42;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.fan-groups-header {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.fan-groups-header h1 {
+  color: #354c42;
+  font-size: clamp(32px, 4vw, 45px);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.fan-groups-header p {
+  color: #68776e;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* TOOLBAR */
+
+.fan-groups-toolbar {
+  max-width: 950px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.fan-groups-toolbar input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px 18px;
+  border: 2px solid #d9cbed;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #354c42;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.fan-groups-toolbar input:focus,
+.fan-group-form input:focus,
+.fan-group-form textarea:focus {
+  border-color: #8064a5;
+  box-shadow: 0 0 0 3px rgba(128, 100, 165, 0.12);
+}
+
+.fan-groups-toolbar button {
+  padding: 15px 24px;
+  border-radius: 12px;
+  background: #214b39;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.fan-groups-toolbar button:hover,
+.fan-group-form-actions button[type="submit"]:hover,
+.fan-group-card > button:hover {
+  background: #32674c;
+  transform: translateY(-2px);
+}
+
+/* CREATE GROUP FORM */
+
+.fan-group-form {
+  max-width: 950px;
+  margin: 0 auto 30px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e7def1;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(53, 45, 75, 0.07);
+}
+
+.fan-group-form h2 {
+  margin-bottom: 22px;
+  color: #354c42;
+  font-size: 23px;
+}
+
+.fan-group-form > input,
+.fan-group-form > textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 14px 16px;
+  border: 2px solid #e1d8ed;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #354c42;
+  font-size: 15px;
+  outline: none;
+  resize: vertical;
+}
+
+.fan-group-form > textarea {
+  min-height: 110px;
+}
+
+.fan-group-private {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0 22px;
+  color: #354c42;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.fan-group-private input {
+  width: 19px;
+  height: 19px;
+  accent-color: #214b39;
+  cursor: pointer;
+}
+
+.fan-group-form-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.fan-group-form-actions button {
+  min-width: 115px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fan-group-form-actions button[type="submit"] {
+  background: #214b39;
+  color: #ffffff;
+}
+
+.fan-group-form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.fan-group-form-actions .fan-group-cancel {
+  background: #eee8f5;
+  color: #514663;
+}
+
+.fan-group-form-actions .fan-group-cancel:hover {
+  background: #e1d7ed;
+}
+
+/* MESSAGES */
+
+.fan-group-message,
+.fan-group-error {
+  max-width: 950px;
+  margin: 15px auto;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.fan-group-message {
+  background: #e5f3e9;
+  color: #214b39;
+  border: 1px solid #b9ddc4;
+}
+
+.fan-group-error {
+  background: #fff0f0;
+  color: #a53232;
+  border: 1px solid #f0caca;
+}
+
+/* TABS */
+
+.fan-groups-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 35px 0;
+}
+
+.fan-groups-tabs button {
+  min-width: 140px;
+  padding: 13px 24px;
+  border: 2px solid #214b39;
+  border-radius: 25px;
+  background: transparent;
+  color: #214b39;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fan-groups-tabs button:hover,
+.fan-groups-tabs button.active {
+  background: #214b39;
+  color: #ffffff;
+}
+
+/* GROUP CARDS */
+
+.fan-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.fan-group-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 255px;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e7def1;
+  border-radius: 18px;
+  box-shadow: 0 7px 22px rgba(53, 45, 75, 0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.fan-group-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(53, 45, 75, 0.11);
+}
+
+.fan-group-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.fan-group-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #e9f1e9;
+  font-size: 25px;
+}
+
+.fan-group-visibility {
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #f0eafa;
+  color: #665080;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fan-group-card h2 {
+  margin-bottom: 12px;
+  color: #354c42;
+  font-size: 21px;
+  overflow-wrap: anywhere;
+}
+
+.fan-group-description {
+  flex: 1;
+  margin-bottom: 22px;
+  color: #718078;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.fan-group-card > button {
+  width: 100%;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #214b39;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fan-group-card > button:disabled {
+  background: #dce8df;
+  color: #46614e;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* EMPTY / LOADING */
+
+.fan-groups-empty {
+  padding: 45px 15px;
+  text-align: center;
+  color: #718078;
+  font-size: 16px;
+}
+
+/* GENERAL BUTTON SETTINGS */
+
+.fan-groups-page button {
+  font-family: inherit;
+}
+
+.fan-groups-page button:focus-visible {
+  outline: 3px solid #a58bc5;
+  outline-offset: 3px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+  .fan-groups-page {
+    padding: 45px 5%;
+  }
+
+  .fan-groups-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fan-groups-toolbar input,
+  .fan-groups-toolbar button {
+    width: 100%;
+  }
+
+  .fan-group-form {
+    padding: 20px;
+  }
+
+  .fan-groups-tabs {
+    gap: 8px;
+  }
+
+  .fan-groups-tabs button {
+    min-width: 0;
+    flex: 1;
+    padding: 12px 10px;
+  }
+
+  .fan-groups-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fan-group-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.fan-group-card-actions button {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fan-group-edit,
+.fan-group-delete,
+.fan-group-leave {
+  width: 100%;
+}
+
+.fan-group-edit {
+  background: #214b39;
+  color: white;
+}
+
+.fan-group-delete {
+  background: #8b3f55;
+  color: white;
+}
+
+.fan-group-leave {
+  background: #214b39;
+  color: white;
+}
+
+.fan-group-edit:hover,
+.fan-group-leave:hover {
+  background: #32674c;
+}

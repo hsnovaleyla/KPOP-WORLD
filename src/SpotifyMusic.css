@@ -1,0 +1,232 @@
+
+.music-section {
+  min-height: 100vh;
+  padding: 65px 8%;
+  background: #f7f3fc;
+  color: #354c42;
+}
+
+.music-section .section-label {
+  color: #8d78b5;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.music-section h2 {
+  color: #354c42;
+  font-size: clamp(32px, 4vw, 45px);
+  margin: 15px 0;
+  text-align: center;
+}
+
+.music-section .section-description {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+  line-height: 1.7;
+  color: #68776d;
+}
+
+.music-featured-groups,
+.music-search-section,
+.music-recent-searches,
+.spotify-player,
+.music-share-favorite {
+  margin-top: 35px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e8e0f1;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(80, 60, 100, 0.06);
+}
+
+.music-featured-groups h3,
+.music-search-section h3,
+.music-recent-searches h3,
+.spotify-player h3,
+.music-share-favorite h3 {
+  color: #354c42;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.music-group-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.music-group-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: #f5f0fb;
+  border: 1px solid #e5d9f2;
+}
+
+.music-group-card h4 {
+  color: #354c42;
+  font-size: 22px;
+  margin: 0 0 18px;
+}
+
+.music-group-card button,
+.music-search button,
+.music-share-favorite button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 22px;
+  background: #b8d6bd;
+  color: #294b37;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.music-group-card button:hover,
+.music-search button:hover,
+.music-share-favorite button:hover {
+  background: #9fc8a7;
+  transform: translateY(-2px);
+}
+
+.music-group-about {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ded2eb;
+  line-height: 1.7;
+}
+
+.music-group-about h5 {
+  color: #756096;
+  font-size: 16px;
+  margin: 18px 0 8px;
+}
+
+.music-group-about ul {
+  padding-left: 22px;
+}
+
+.music-search-section p,
+.spotify-player p,
+.music-share-favorite p {
+  color: #68776d;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.music-search {
+  display: flex;
+  gap: 12px;
+}
+
+.music-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 17px;
+  border: 1px solid #d9cde8;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: #fff;
+}
+
+.music-search input:focus,
+.music-share-favorite select:focus {
+  border-color: #9b83c0;
+  box-shadow: 0 0 0 3px rgba(155, 131, 192, 0.15);
+}
+
+.music-recent-searches .music-group-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.music-recent-searches .music-group-list button {
+  padding: 9px 15px;
+  border: 1px solid #ded2eb;
+  border-radius: 20px;
+  background: #f5f0fb;
+  color: #55456f;
+  cursor: pointer;
+}
+
+.music-clear-history {
+  margin-top: 18px;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #eee8f4;
+  color: #655477;
+  cursor: pointer;
+}
+
+.spotify-player a {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #b8d6bd;
+  color: #294b37;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.music-share-favorite select {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  padding: 13px 15px;
+  margin-bottom: 16px;
+  border: 1px solid #d9cde8;
+  border-radius: 10px;
+  background: white;
+  color: #354c42;
+  font-size: 15px;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .music-section {
+    padding: 45px 5%;
+  }
+
+  .music-group-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .music-search {
+    flex-direction: column;
+  }
+
+  .music-search button {
+    width: 100%;
+  }
+}
+
+/* Dark green theme update */
+
+.music-group-card button,
+.music-search button,
+.music-share-favorite button,
+.spotify-player a {
+  background: #285943;
+  color: #FFFFFF;
+}
+
+.music-group-card button:hover,
+.music-search button:hover,
+.music-share-favorite button:hover,
+.spotify-player a:hover {
+  background: #1D4532;
+  color: #FFFFFF;
+}
+
+.music-group-card button,
+.music-search button,
+.music-share-favorite button {
+  border: none;
+}
+
+.spotify-player a {
+  text-decoration: none;
+}

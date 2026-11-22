@@ -1,0 +1,246 @@
+
+.concert-tickets-page {
+  min-height: 100vh;
+  padding: 35px 7%;
+  background: linear-gradient(135deg, #f8f3ff, #eee5ff, #f2f8ef);
+  color: #443653;
+  font-family: inherit;
+}
+
+.concert-back-button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 13px;
+  background: #285943;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.concert-back-button:hover {
+  background: #1d4532;
+  transform: translateY(-2px);
+}
+
+.concert-hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 55px auto 45px;
+}
+
+.concert-eyebrow {
+  display: inline-block;
+  color: #648c70;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.concert-hero h1 {
+  font-size: clamp(40px, 6vw, 66px);
+  color: #594276;
+  margin: 0 0 18px;
+  font-weight: 850;
+}
+
+.concert-hero p {
+  color: #776b83;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.concert-search-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 45px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e5d8f5;
+  border-radius: 27px;
+  box-shadow: 0 18px 50px rgba(91, 66, 120, 0.11);
+  text-align: center;
+}
+
+.concert-search-section h2 {
+  color: #594276;
+  font-size: 30px;
+  margin: 0 0 12px;
+}
+
+.concert-search-section > p {
+  color: #82758c;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.concert-search-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #faf7ff;
+  border: 2px solid #e5d8f5;
+  border-radius: 17px;
+  padding: 0 22px;
+  min-height: 70px;
+  transition: 0.25s ease;
+}
+
+.concert-search-box:focus-within {
+  border-color: #78a987;
+  box-shadow: 0 0 0 4px rgba(120, 169, 135, 0.15);
+}
+
+.concert-search-box span {
+  color: #648c70;
+  font-size: 34px;
+}
+
+.concert-search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #443653;
+  font-size: 17px;
+}
+
+.concert-search-box input::placeholder {
+  color: #a49aaf;
+}
+
+.concert-search-button {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  min-height: 64px;
+  border: none;
+  border-radius: 15px;
+  background: #285943;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 8px 20px rgba(40, 89, 67, 0.18);
+}
+
+.concert-search-button:hover {
+  background: #1d4532;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(40, 89, 67, 0.24);
+}
+
+.concert-error {
+  color: #b43b55;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 14px;
+}
+
+.concert-information,
+.concert-fan-message {
+  max-width: 900px;
+  margin: 55px auto;
+  padding: 42px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 25px;
+  border: 1px solid #e5d8f5;
+  box-shadow: 0 10px 30px rgba(91, 66, 120, 0.06);
+}
+
+.concert-info-icon,
+.concert-fan-message > span {
+  display: block;
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.concert-information h2,
+.concert-fan-message h2 {
+  color: #594276;
+  font-size: 27px;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+
+.concert-information p,
+.concert-fan-message p {
+  color: #786d82;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.concert-fan-message {
+  background: linear-gradient(135deg, #f0e7ff, #edf7ed);
+}
+
+.concert-footer {
+  text-align: center;
+  padding: 30px 10px;
+  border-top: 1px solid #dfd3eb;
+  color: #776b83;
+}
+
+.concert-footer p {
+  font-weight: 800;
+  color: #594276;
+  margin-bottom: 9px;
+  font-size: 16px;
+}
+
+.concert-footer small {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .concert-tickets-page {
+    padding: 22px 5%;
+  }
+
+  .concert-hero {
+    margin-top: 42px;
+  }
+
+  .concert-hero p {
+    font-size: 16px;
+  }
+
+  .concert-search-section {
+    padding: 30px 20px;
+  }
+
+  .concert-search-section h2 {
+    font-size: 25px;
+  }
+
+  .concert-search-box {
+    min-height: 62px;
+    padding: 0 14px;
+  }
+
+  .concert-search-box input {
+    font-size: 15px;
+  }
+
+  .concert-search-button {
+    font-size: 17px;
+  }
+
+  .concert-information,
+  .concert-fan-message {
+    padding: 30px 20px;
+    margin: 35px auto;
+  }
+
+  .concert-information h2,
+  .concert-fan-message h2 {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,227 @@
+
+.weekly-winner-page {
+  min-height: 100vh;
+  padding: 60px 24px;
+  background: linear-gradient(135deg, #f5efff, #e9dcff, #f8f3ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #403052;
+}
+
+.weekly-winner-page > button {
+  align-self: flex-start;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 14px;
+  background: #285943;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(40, 89, 67, 0.2);
+  transition: 0.2s ease;
+}
+
+.weekly-winner-page > button:hover {
+  background: #1d4532;
+  transform: translateY(-2px);
+}
+
+.weekly-winner-page h1 {
+  margin: 45px 0 30px;
+  font-size: 42px;
+  font-weight: 800;
+  color: #67449a;
+  text-align: center;
+}
+
+.winner-card {
+  width: 100%;
+  max-width: 680px;
+  padding: 55px 45px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.88);
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(93, 65, 130, 0.16);
+}
+
+.winner-card h2 {
+  margin: 0 0 22px;
+  font-size: 36px;
+  font-weight: 800;
+  color: #5d3c87;
+  overflow-wrap: anywhere;
+}
+
+.winner-card h3 {
+  margin: 15px 0;
+  font-size: 30px;
+  color: #39845c;
+  font-weight: 800;
+}
+
+.winner-card p {
+  margin: 25px 0 18px;
+  font-size: 19px;
+  color: #756487;
+}
+
+/* Fan group dropdown */
+.winner-group-dropdown {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.winner-group-trigger {
+  width: 100%;
+  min-height: 68px;
+  padding: 18px 22px;
+  border: 2px solid #d9c7f2;
+  border-radius: 15px;
+  background: #fbf9ff;
+  color: #49365e;
+  font-size: 19px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.winner-group-trigger:hover,
+.winner-group-trigger:focus {
+  border-color: #9872c6;
+  outline: none;
+  background: #f6f0ff;
+}
+
+.winner-group-trigger > span:first-child {
+  overflow-wrap: anywhere;
+}
+
+.winner-dropdown-arrow {
+  flex-shrink: 0;
+  color: #67449a;
+  font-size: 16px;
+}
+
+.winner-group-menu {
+  width: 100%;
+  max-height: 260px;
+  overflow-y: auto;
+  margin-top: 8px;
+  padding: 10px;
+  border: 2px solid #d9c7f2;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(93, 65, 130, 0.14);
+}
+
+.winner-group-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 56px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: #49365e;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.winner-group-option:hover {
+  background: #f2eaff;
+}
+
+.winner-group-option input {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  accent-color: #285943;
+  cursor: pointer;
+}
+
+.winner-selection-count {
+  margin: 15px 0 !important;
+  font-size: 16px !important;
+  color: #67449a !important;
+  font-weight: 700;
+}
+
+.winner-card > button {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 15px;
+  background: #75b98d;
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.winner-card > button:hover:not(:disabled) {
+  background: #4e9a6c;
+  transform: translateY(-2px);
+}
+
+.winner-card > button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.weekly-winner-page > p {
+  font-size: 18px;
+  text-align: center;
+  color: #665477;
+}
+
+@media (max-width: 600px) {
+  .weekly-winner-page {
+    padding: 30px 16px;
+  }
+
+  .weekly-winner-page > button {
+    padding: 14px 27px;
+    font-size: 18px;
+  }
+
+  .weekly-winner-page h1 {
+    font-size: 32px;
+    margin-top: 35px;
+  }
+
+  .winner-card {
+    padding: 35px 22px;
+  }
+
+  .winner-card h2 {
+    font-size: 28px;
+  }
+
+  .winner-card h3 {
+    font-size: 25px;
+  }
+
+  .winner-group-trigger {
+    min-height: 62px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .winner-group-option {
+    font-size: 16px;
+  }
+}

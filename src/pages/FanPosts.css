@@ -1,0 +1,398 @@
+
+.fan-posts-page {
+  min-height: 100vh;
+  padding: 65px 8%;
+  background: #f7f3fc;
+  color: #354c42;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fan-posts-header {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.fan-posts-label {
+  color: #8064a5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.fan-posts-header h1 {
+  margin: 12px 0;
+  font-size: clamp(32px, 4vw, 45px);
+  color: #354c42;
+}
+
+.fan-posts-header p {
+  color: #68776e;
+  line-height: 1.7;
+}
+
+.fan-posts-toolbar {
+  max-width: 850px;
+  margin: 0 auto 28px;
+  display: flex;
+  gap: 14px;
+}
+
+.fan-posts-toolbar select,
+.fan-post-form select {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 2px solid #d9cbed;
+  border-radius: 11px;
+  background: white;
+  color: #354c42;
+  font-size: 15px;
+}
+
+.fan-post-create-button,
+.fan-post-form-actions button,
+.fan-post-comment-form button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 11px;
+  background: #214b39;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fan-post-create-button:hover,
+.fan-post-form-actions button:hover,
+.fan-post-comment-form button:hover {
+  background: #32674c;
+  transform: translateY(-2px);
+}
+
+.fan-post-form,
+.fan-post-card {
+  max-width: 850px;
+  margin: 0 auto 25px;
+  padding: 26px;
+  background: white;
+  border: 1px solid #e7def1;
+  border-radius: 18px;
+  box-shadow: 0 7px 22px rgba(53, 45, 75, 0.06);
+}
+
+.fan-post-form h2 {
+  margin-bottom: 20px;
+  color: #354c42;
+}
+
+.fan-post-form label > span {
+  display: block;
+  margin-bottom: 9px;
+  font-weight: 600;
+}
+
+.fan-post-form select {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.fan-post-form textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #e1d8ed;
+  border-radius: 11px;
+  color: #354c42;
+  font: inherit;
+  resize: vertical;
+  outline: none;
+}
+
+.fan-post-form textarea:focus,
+.fan-post-form select:focus,
+.fan-post-comment-form input:focus {
+  border-color: #8064a5;
+  box-shadow: 0 0 0 3px rgba(128, 100, 165, 0.12);
+}
+
+.fan-post-image-picker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 18px;
+  margin: 5px 0 18px;
+  border: 2px dashed #bba9d2;
+  border-radius: 11px;
+  color: #665080;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fan-post-image-picker input {
+  display: none;
+}
+
+.fan-post-existing-image,
+.fan-post-selected-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0;
+  color: #68776e;
+}
+
+.fan-post-existing-image button,
+.fan-post-selected-file button {
+  border: none;
+  background: #f0eafa;
+  color: #665080;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fan-post-form-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.fan-post-form-actions .fan-post-cancel {
+  background: #eee8f5;
+  color: #514663;
+}
+
+.fan-post-message,
+.fan-post-error {
+  max-width: 850px;
+  margin: 15px auto;
+  padding: 14px 18px;
+  border-radius: 10px;
+}
+
+.fan-post-message {
+  background: #e5f3e9;
+  color: #214b39;
+  border: 1px solid #b9ddc4;
+}
+
+.fan-post-error {
+  background: #fff0f0;
+  color: #a53232;
+  border: 1px solid #f0caca;
+}
+
+.fan-post-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.fan-post-card {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.fan-post-card-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 20px;
+}
+
+.fan-post-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e9f1e9;
+  color: #214b39;
+  font-size: 27px;
+}
+
+.fan-post-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.fan-post-author strong {
+  color: #354c42;
+}
+
+.fan-post-author span {
+  color: #8064a5;
+  font-size: 13px;
+}
+
+.fan-post-author small,
+.fan-post-comment small {
+  color: #8b938d;
+  font-size: 11px;
+}
+
+.fan-post-owner-actions {
+  display: flex;
+  gap: 7px;
+  margin-left: auto;
+}
+
+.fan-post-owner-actions button {
+  padding: 8px 11px;
+  border: none;
+  border-radius: 8px;
+  background: #eee8f5;
+  color: #514663;
+  cursor: pointer;
+}
+
+.fan-post-owner-actions button:last-child {
+  background: #f8e9ec;
+  color: #8b3f55;
+}
+
+.fan-post-content {
+  margin: 12px 0 18px;
+  color: #46594e;
+  font-size: 15px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.fan-post-image {
+  display: block;
+  width: 100%;
+  max-height: 550px;
+  object-fit: contain;
+  margin: 12px auto 18px;
+  border-radius: 13px;
+  background: #f7f3fc;
+}
+
+.fan-post-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #eee8f5;
+}
+
+.fan-post-actions button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 9px;
+  background: #f5f1fa;
+  color: #514663;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.fan-post-actions button.liked {
+  background: #f8e9ec;
+  color: #a83255;
+}
+
+.fan-post-comments {
+  margin-top: 17px;
+  padding-top: 16px;
+  border-top: 1px solid #eee8f5;
+}
+
+.fan-post-comment {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0eafa;
+}
+
+.fan-post-comment strong {
+  color: #354c42;
+  font-size: 13px;
+}
+
+.fan-post-comment p {
+  margin: 5px 0;
+  color: #59675e;
+  overflow-wrap: anywhere;
+}
+
+.fan-post-comment > button {
+  align-self: center;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #f8e9ec;
+  color: #8b3f55;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fan-post-comment-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.fan-post-comment-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 2px solid #e1d8ed;
+  border-radius: 10px;
+  outline: none;
+}
+
+.fan-post-no-comments,
+.fan-post-empty {
+  padding: 30px 15px;
+  text-align: center;
+  color: #718078;
+}
+
+.fan-posts-page button:focus-visible {
+  outline: 3px solid #a58bc5;
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .fan-posts-page {
+    padding: 42px 5%;
+  }
+
+  .fan-posts-toolbar {
+    flex-direction: column;
+  }
+
+  .fan-posts-toolbar select,
+  .fan-post-create-button {
+    width: 100%;
+  }
+
+  .fan-post-form,
+  .fan-post-card {
+    padding: 18px;
+  }
+
+  .fan-post-card-header {
+    flex-wrap: wrap;
+  }
+
+  .fan-post-owner-actions {
+    width: 100%;
+    margin-left: 60px;
+  }
+
+  .fan-post-comment-form {
+    flex-direction: column;
+  }
+
+  .fan-post-form-actions button {
+    flex: 1;
+  }
+}

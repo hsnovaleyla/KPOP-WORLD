@@ -1,0 +1,238 @@
+
+.feedback-widget {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 2000;
+  font-family: inherit;
+}
+
+.feedback-floating-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 175px;
+  padding: 17px 25px;
+  border: none;
+  border-radius: 35px;
+  background: #285943;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 7px 22px rgba(40, 89, 67, 0.25);
+  transition: 0.25s ease;
+}
+
+.feedback-floating-button:hover {
+  background: #1d4532;
+  transform: translateY(-3px);
+}
+
+.feedback-floating-button span {
+  font-size: 21px;
+}
+
+.feedback-panel {
+  position: absolute;
+  right: 0;
+  bottom: 82px;
+  width: 390px;
+  max-width: calc(100vw - 36px);
+  padding: 27px;
+  border: 1px solid rgba(40, 89, 67, 0.12);
+  border-radius: 22px;
+  background: #e9e1f5;
+  color: #343044;
+  box-shadow: 0 12px 40px rgba(55, 43, 75, 0.2);
+  animation: feedbackAppear 0.22s ease;
+}
+
+@keyframes feedbackAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feedback-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.feedback-small-label {
+  color: #285943;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.feedback-panel-header h2 {
+  margin: 8px 0;
+  color: #302944;
+  font-size: 23px;
+}
+
+.feedback-panel-header p {
+  margin: 0;
+  color: #71677e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.feedback-close-button {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+  color: #285943;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.feedback-panel form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-panel form label {
+  margin-bottom: 10px;
+  color: #383047;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.feedback-rating-label {
+  margin-bottom: 8px;
+}
+
+.feedback-stars {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 23px;
+}
+
+.feedback-star {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #b8aebe;
+  font-size: 36px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.feedback-star:hover {
+  transform: scale(1.15);
+}
+
+.feedback-star.active {
+  color: #d99c35;
+}
+
+.feedback-panel textarea {
+  width: 100%;
+  min-height: 125px;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #d0c2df;
+  border-radius: 13px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.78);
+  color: #343044;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.feedback-panel textarea:focus {
+  border-color: #285943;
+  box-shadow: 0 0 0 3px rgba(40, 89, 67, 0.1);
+}
+
+.feedback-character-count {
+  margin: 7px 0 15px;
+  color: #81758e;
+  font-size: 12px;
+  text-align: right;
+}
+
+.feedback-submit-button {
+  width: 100%;
+  min-height: 54px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 12px;
+  background: #285943;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.feedback-submit-button:hover:not(:disabled) {
+  background: #1d4532;
+  transform: translateY(-2px);
+}
+
+.feedback-submit-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.feedback-message {
+  padding: 11px;
+  border-radius: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.feedback-message.error {
+  background: #f8dddd;
+  color: #9b3030;
+}
+
+.feedback-message.success {
+  background: #d9efdf;
+  color: #285943;
+}
+
+.feedback-privacy-note {
+  margin: 16px 0 0;
+  color: #81758e;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .feedback-widget {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .feedback-panel {
+    right: -5px;
+    bottom: 72px;
+    width: calc(100vw - 50px);
+    padding: 20px;
+  }
+
+  .feedback-floating-button {
+    min-width: 150px;
+    padding: 14px 19px;
+    font-size: 15px;
+  }
+}
